@@ -21,6 +21,7 @@ The `MockWebServer` in package `th.mfu` serves the web server in our system. It 
 5. Study the code in `main()` and tell me What it does?
 ```
  write your through here.
+ The main() method starts two servers on ports 8080 and 8081 using threads. It waits for the user to press a key, then stops both servers and exits. This demonstrates basic socket programming and multithreaded server handling in Java
 ```
 6. Run the `main()`, point the web browser to `http://localhost:8080` and `http://localhost:8081`
 It should shows a simple HTML with the word such as  `Hello, Web! on Port 8080`.
@@ -53,6 +54,7 @@ Think about the following,  modify the code to experiment it and put your though
 
 ```
   Your thought here...
+ To run MockWebServer on a different port, simply change the port number passed to its constructor. To run more than two instances, create additional threads with unique port numbers. The HTML content in the response can be customized by modifying the HTML string, allowing the inclusion of tables, text, images, and other elements. Running multiple instances is beneficial for load distribution, parallel testing, scalability, and separating different services or features for better system organization and performance.
 ```
 **Please push the code back to Github to submit this lab**
 After you push, ensure you have green checkmark on the repository.
